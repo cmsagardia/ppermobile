@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">PPEMobile</string>
+	<string name="app_bartitle">AYSA PPE</string>
+	<string name="user">Usuario</string>
+	<string name="password">Contraseña</string>
+	<string name="user_hint">Ingrese su usuario</string>
+	<string name="password_hint">Ingrese su contraseña</string>
+	<string name="app_title">Plan de Prevención y Emergencia</string>
+
+	<string name="shortdial_tab_label">Guardias</string>
+	<string name="events_tab_label">Eventos</string>
+	<string name="documents_tab_label">Documentos</string>
+
+	<string name="addevent_title">Crear Evento</string>
+	<string name="editevent_title">Editar Evento</string>
+	<string name="addevent_state">Estado</string>
+	<string name="addevent_btn_open">Abierto</string>
+	<string name="addevent_btn_closed">Cerrado</string>
+	<string name="addevent_btn_create">Crear</string>
+
+	<string name="addFeature_btn_create">Crear</string>
+
+	<string name="unexpected_error">Ocurrio un error inesperado</string>
+
+	<string name="information">Información</string>
+	<string name="observations">Observaciones</string>
+	<string name="clasificacion">Clasificación</string>
+	<string name="observaciones">Observaciones</string>
+	<string name="event_title">Título</string>
+	<string name="event_date">Fecha ocurrencia</string>
+	<string name="event_place">Lugar</string>
+	<string name="event_type">Tipo</string>
+	<string name="event_sector">Sector</string>
+	<string name="event_detail">Detalle</string>
+	<string name="event_referencia">Referencia Evento</string>
+	<string name="event_user_creator">Usuario Creador</string>
+
+	<string name="event_general">General</string>
+	<string name="event_type_prompt">Tipo Evento</string>
+	<string name="event_sector_prompt">Sector</string>
+	<string name="event_filter">Filtrar Resultado</string>
+	<string name="files">Archivos</string>
+	<string name="upload_files">Subir archivos</string>
+	<string name="author">Autor</string>
+	<string name="add_feature_title">Crear Novedad</string>
+
+	<string name="description_note_1">
+		Tené en cuenta que para crear un &lt;b&gt;Evento&lt;/b&gt; sobre CONTINUIDAD y/o CALIDAD y/o IMAGEN DE LA EMPRESA, debes considerar lo siguiente:
+	</string>
+	<string name="list_note">
+		&lt;ul&gt;
+		&lt;li&gt;Desvíos de los valores máximos/mínimos (Marco regulatorio / AMFE / consignas).&lt;/li&gt;
+		&lt;li&gt;Extensión en el tiempo(durabilidad mayor a lo definido).&lt;/li&gt;
+		&lt;li&gt;Exposición en medios de comunicación (TV/Radios/Redes )&lt;/li&gt;
+		&lt;/ul&gt;
+	</string>
+	<string name="description_note_2">
+		De no suceder alguno de los puntos anteriores, debes cargar la información como &lt;b&gt;Novedad&lt;/b&gt;.
+	</string>
+
+
+	<string name="search_field">Buscar...</string>
+
+	<string name="notes_Title_GTOP_">Nota importante</string>
+	<string name="notes_GTOP_">Tener en cuenta que coincide el día que finaliza una semana de GTOP con el día en que comienza la siguiente semana. Esto es porque concluye a las 9hs, y la nueva GTOP comienza a las 17hs del mismo día.</string>
+
+	<string name="Title_UserBlocked">Importante</string>
+	<string name="Notes_UserBlocked">Para desbloquear o habilitar un usuario, debe generar un ticket a Service Desk o comunicarse con Mesa de Ayuda al 6319-1240</string>
+
+</resources>

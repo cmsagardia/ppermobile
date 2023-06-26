@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/txtNotesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:textStyle="bold"
+        android:text="Observación"
+        />
+    <TextView
+        android:id="@+id/txtNotes"
+        android:layout_below="@+id/txtNotesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="Texto de la observacion"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtNotesTitle"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/txtObservacionCreador"
+        android:layout_below="@+id/FilesContainerObservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_alignParentTop="false"
+        android:layout_marginBottom="8dp"
+        android:text="Responsable" />
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/normaltext_evdetail"
+        android:layout_width="233.0dp"
+        android:layout_below="@+id/FilesContainerObservation"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sector" />
+    <LinearLayout
+        android:id="@+id/FilesContainerObservation"
+        android:layout_below="@+id/txtNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="-23dp">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtObservacionFecha"
+        android:layout_below="@id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:text="Fecha" />
+</RelativeLayout>

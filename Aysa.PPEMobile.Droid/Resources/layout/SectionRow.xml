@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="52dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:orientation="vertical">
+   
+		<FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+			<TextView
+                android:textColor="@color/cellSectionText"
+                android:text="text"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txtSectionTitle"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="35dp"
+                android:layout_marginLeft="4dp" />
+
+            <ImageButton
+                android:id="@+id/favoriteButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="Favorito"
+                android:src="@drawable/star_empty" />
+    </FrameLayout>
+</LinearLayout>
