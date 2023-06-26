@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <item name="colorPrimary" type="color">#672E8A</item>
+  <item name="colorPrimaryDark" type="color">#672E8A</item>
+  <item name="colorAccent" type="color">#FAA929</item>
+  <item name="darkerGray" type="color">#C4C4C8</item>
+  <item name="darkerGrayLine" type="color">#7E7E82</item>
+  <item name="colorLightGreyBackground" type="color">#CECECE</item>
+  <item name="cellPeopleInChargeText" type="color">#6B6B6E</item>
+  <item name="cellSectionText" type="color">#6B6B6E</item>
+  <!-- colorTab, color Tab Indicator-->
+  <item name="colorTab" type="color">#F8A83B</item>
+  
+  <color name="fab_color_1">#672E8A</color>
+  <color name="fab_color_1_muted">#C4C4C8</color>
+  <color name="fab_color_2">#672E8A</color>
+  <color name="fab_color_2_muted">#C4C4C8</color>
+
+  <item name="form_bg_grey" type="color">#ECEEF0</item>
+  <item name="colorCardText" type="color">#777777</item>
+  <color name="cellDocumentTitleText">#000000</color>
+  <color name="statusClose">#9D9CA3</color>
+
+
+  
+	
+</resources>

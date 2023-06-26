@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="AttachmentFileView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-Gz-jsM">
+                    <rect key="frame" x="10" y="7.5" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="WgA-YI-ffx"/>
+                        <constraint firstAttribute="height" constant="15" id="cHf-iY-TaK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" text="Fotografías incidencia planta Lomas.jpg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diB-md-4km">
+                    <rect key="frame" x="35" y="6" width="268" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.37254901959999998" green="0.12941176469999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzY-t8-tkb" userLabel="SeparatorView">
+                    <rect key="frame" x="35" y="23" width="268" height="1"/>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.12941176469999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Vxl-2c-gNv"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-vs-M5n">
+                    <rect key="frame" x="0.0" y="0.0" width="303" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="UIButtonR2QvsM5n_TouchUpInside:" destination="1" eventType="touchUpInside" id="344"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsO-bV-3X0">
+                    <rect key="frame" x="308" y="3" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="H3P-y1-cEU"/>
+                        <constraint firstAttribute="height" constant="25" id="fcN-vA-X9L"/>
+                    </constraints>
+                    <state key="normal" image="remove_attachment"/>
+                    <connections>
+                        <action selector="UIButtonIsObV3X0_TouchUpInside:" destination="1" id="705" eventType="touchUpInside"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="diB-md-4km" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="026-ec-8Qo"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IsO-bV-3X0" secondAttribute="trailing" id="520-Pa-BFO"/>
+                <constraint firstItem="IsO-bV-3X0" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="63C-Dv-Wbc"/>
+                <constraint firstItem="diB-md-4km" firstAttribute="leading" secondItem="QVF-Gz-jsM" secondAttribute="trailing" constant="10" id="6i6-QV-iy0"/>
+                <constraint firstItem="ZzY-t8-tkb" firstAttribute="top" secondItem="diB-md-4km" secondAttribute="bottom" id="Wbq-DR-uWC"/>
+                <constraint firstItem="IsO-bV-3X0" firstAttribute="leading" secondItem="diB-md-4km" secondAttribute="trailing" constant="5" id="WhE-kC-2LU"/>
+                <constraint firstAttribute="bottom" secondItem="R2Q-vs-M5n" secondAttribute="bottom" id="XR1-V0-6ix"/>
+                <constraint firstItem="QVF-Gz-jsM" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="YWQ-6R-nHM"/>
+                <constraint firstItem="R2Q-vs-M5n" firstAttribute="trailing" secondItem="diB-md-4km" secondAttribute="trailing" id="eNC-kt-CTi"/>
+                <constraint firstItem="R2Q-vs-M5n" firstAttribute="top" secondItem="1" secondAttribute="top" id="fg3-6e-lGG"/>
+                <constraint firstItem="R2Q-vs-M5n" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="kuH-jS-jQE"/>
+                <constraint firstItem="QVF-Gz-jsM" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="qk4-zQ-nfd"/>
+                <constraint firstItem="ZzY-t8-tkb" firstAttribute="trailing" secondItem="diB-md-4km" secondAttribute="trailing" id="qkZ-Ax-VXf"/>
+                <constraint firstItem="ZzY-t8-tkb" firstAttribute="leading" secondItem="diB-md-4km" secondAttribute="leading" id="u8V-aI-ozJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="IconImageView" destination="QVF-Gz-jsM" id="name-outlet-QVF-Gz-jsM"/>
+                <outlet property="NameFileLabel" destination="diB-md-4km" id="name-outlet-diB-md-4km"/>
+                <outlet property="RemoveButton" destination="IsO-bV-3X0" id="name-outlet-IsO-bV-3X0"/>
+                <outlet property="HeightRemoveConstraint" destination="H3P-y1-cEU" id="name-outlet-H3P-y1-cEU"/>
+            </connections>
+            <point key="canvasLocation" x="187.5" y="38"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="globe" width="30" height="30"/>
+        <image name="remove_attachment" width="30" height="30"/>
+        <image name="filter_icon" width="22" height="22"/>
+        <image name="launch_backgound" width="2000" height="3556"/>
+        <image name="short_dial_icon" width="26" height="26"/>
+        <image name="event_icon" width="26" height="26"/>
+        <image name="document_icon" width="26" height="26"/>
+        <image name="profile_icon" width="26" height="26"/>
+        <image name="user_credentials" width="20" height="20"/>
+        <image name="lock_credentials" width="20" height="20"/>
+        <image name="marker_event" width="20" height="20"/>
+        <image name="user_event" width="20" height="20"/>
+        <image name="calendar_event" width="20" height="20"/>
+        <image name="open_folder_event" width="20" height="20"/>
+        <image name="close_folder_event" width="20" height="20"/>
+        <image name="search_icon" width="30" height="30"/>
+        <image name="calendar_filter_event" width="30" height="30"/>
+        <image name="pdf_file" width="50" height="50"/>
+        <image name="edit_profile_title" width="30" height="30"/>
+        <image name="message_edit_profile" width="30" height="30"/>
+        <image name="plus_edit" width="22" height="22"/>
+        <image name="cellphone" width="30" height="30"/>
+        <image name="alternative_phone" width="30" height="30"/>
+        <image name="rpv_phone" width="30" height="30"/>
+        <image name="office_phone" width="30" height="30"/>
+        <image name="lock" width="30" height="30"/>
+        <image name="clear_filter" width="22" height="22"/>
+        <image name="checked" width="30" height="30"/>
+        <image name="unchecked" width="30" height="30"/>
+        <image name="upload_image_test" width="400" height="400"/>
+        <image name="test_upload" width="640" height="360"/>
+    </resources>
+</document>

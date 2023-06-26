@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{C949A051-02A9-439E-A169-F23A4A6A8C68}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Aysa.PPEMobile.iOS</RootNamespace>
+    <AssemblyName>Aysa.PPEMobile.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Agua y Saneamientos Argentinos S.A. (75KYZ5JPMH)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>34175</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>AySA PPE Test Profile</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Agua y Saneamientos Argentinos S.A. (75KYZ5JPMH)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>ProvProfile-Dist-Aysappe</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Agua y Saneamientos Argentinos S.A. (75KYZ5JPMH)</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>AySA PPE Test Profile</CodesignProvision>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>26055</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>AySA PPE Test Profile</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo_aysa.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo_aysa.imageset\logo Aysa.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter_icon.imageset\filter-icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter_icon.imageset\filter-icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter_icon.imageset\filter-icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\launch_backgound.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\launch_backgound.imageset\Fondo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\launch_backgound.imageset\Fondo%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\launch_backgound.imageset\Fondo%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo_ppe.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\logo_ppe.imageset\logo_ppe.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\short_dial_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\short_dial_icon.imageset\shortDialIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\short_dial_icon.imageset\shortDialIcon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\short_dial_icon.imageset\shortDialIcon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\event_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\event_icon.imageset\event_icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\event_icon.imageset\event_icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\event_icon.imageset\event_icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\document_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\document_icon.imageset\document_icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\document_icon.imageset\document_icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\document_icon.imageset\document_icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile_icon.imageset\profile_icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile_icon.imageset\profile_icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\profile_icon.imageset\profile_icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_credentials.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_credentials.imageset\user_credentials.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_credentials.imageset\user_credentials%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_credentials.imageset\user_credentials%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock_credentials.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock_credentials.imageset\lock_credentials.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock_credentials.imageset\lock_credentials%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock_credentials.imageset\lock_credentials%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\marker_event.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\marker_event.imageset\marker_event.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\marker_event.imageset\marker_event%402x .png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\marker_event.imageset\marker_event%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_event.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_event.imageset\user_event.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_event.imageset\user_event%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_event.imageset\user_event%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_event.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_event.imageset\calendar_event.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_event.imageset\calendar_event%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_event.imageset\calendar_event%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\open_folder_event.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\open_folder_event.imageset\open_folder_event.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\open_folder_event.imageset\open_folder_event%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\open_folder_event.imageset\open_folder_event%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\close_folder_event.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\close_folder_event.imageset\close_folder_event.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\close_folder_event.imageset\close_folder_event%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\close_folder_event.imageset\close_folder_event%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\search_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\search_icon.imageset\search_icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\search_icon.imageset\search_icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\search_icon.imageset\search_icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_filter_event.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_filter_event.imageset\calendar_filter.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_filter_event.imageset\calendar_filter%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\calendar_filter_event.imageset\calendar_filter%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pdf_file.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pdf_file.imageset\pdf_file.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pdf_file.imageset\pdf_file%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pdf_file.imageset\pdf_file%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\edit_profile_title.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\edit_profile_title.imageset\edit_profile.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\edit_profile_title.imageset\edit_profile%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\edit_profile_title.imageset\edit_profile%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\message_edit_profile.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\message_edit_profile.imageset\message_edit_profile.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\message_edit_profile.imageset\message_edit_profile%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\message_edit_profile.imageset\message_edit_profile%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plus_edit.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plus_edit.imageset\plus_event.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plus_edit.imageset\plus_event%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plus_edit.imageset\plus_event%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_40px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_58px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_87px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_80px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_120px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_180px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon_app_PPE_60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cellphone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cellphone.imageset\cellphone.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cellphone.imageset\cellphone%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cellphone.imageset\cellphone%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\alternative_phone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\alternative_phone.imageset\alternative_phone.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\alternative_phone.imageset\alternative_phone%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\alternative_phone.imageset\alternative_phone%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rpv_phone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rpv_phone.imageset\rpv_phone.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rpv_phone.imageset\rpv_phone%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rpv_phone.imageset\rpv_phone%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\office_phone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\office_phone.imageset\office_phone.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\office_phone.imageset\office_phone2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\office_phone.imageset\office_phone3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\globe.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\globe.imageset\globe.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\globe.imageset\globe%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\globe.imageset\globe%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock.imageset\lock.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock.imageset\lock%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\lock.imageset\lock%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clear_filter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clear_filter.imageset\clearFilter.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clear_filter.imageset\clearFilter%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clear_filter.imageset\clearFilter%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\checked.imageset\checked%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\unchecked.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\unchecked.imageset\unchecked.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\unchecked.imageset\unchecked%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\unchecked.imageset\unchecked%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\upload_image_test.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\upload_image_test.imageset\testimage.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\upload_image_test.imageset\testimage2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\upload_image_test.imageset\testimage3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\remove_attachment.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\remove_attachment.imageset\close.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\remove_attachment.imageset\close%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\remove_attachment.imageset\close%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\testUpload.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\testUpload.imageset\example 2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\testUpload.imageset\example 3.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ok_icon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ok_icon.imageset\ok_icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ok_icon.imageset\ok_icon%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ok_icon.imageset\ok_icon%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\iconDocument.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\iconDocument%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\iconDocument%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_app_ppe_76px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_app_ppe_152px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_app_ppe_167px.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PPE.PNG">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star.imageset\star%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star.imageset\star%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star.imageset\star.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star_empty.imageset\star_empty%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star_empty.imageset\star_empty%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star_empty.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\star_empty.imageset\star_empty.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\backgound_launch.imageset\" />
+    <Folder Include="Assets.xcassets\background.imageset\" />
+    <Folder Include="Assets.xcassets\background_gradient.imageset\" />
+    <Folder Include="Assets.xcassets\close_icon.imageset\" />
+    <Folder Include="Assets.xcassets\documents_read.imageset\" />
+    <Folder Include="Assets.xcassets\event_icon_selected.imageset\" />
+    <Folder Include="Assets.xcassets\short_dial.imageset\" />
+    <Folder Include="Assets.xcassets\short_dial_selected.imageset\" />
+    <Folder Include="Assets.xcassets\short_dial_selected_icon.imageset\" />
+    <Folder Include="Assets.xcassets\test_icon.imageset\" />
+    <Folder Include="Assets.xcassets\test_upload.imageset\" />
+    <Folder Include="ViewControllers\Features\CustomFeaturesViews\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\Events\BuilderEventsTableView\EventsTableViewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Documents\BuilderDocumentsTableView\DocumentTableViewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\ShortDial\BuilderShortDialTableView\SectionTableViewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\ShortDial\BuilderShortDialTableView\HeaderLevelCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\ShortDial\BuilderPeopleInCharge\PersonInChargeTableViewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\ShortDial\BuilderPeopleInCharge\HeaderPersonChargeCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Events\CustomEventsViews\ObservationEventView.xib" />
+    <InterfaceDefinition Include="ViewControllers\ShortDial\SectionSearch\SectionSearchCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\Events\CustomEventsViews\AttachmentFileView.xib" />
+    <InterfaceDefinition Include="ViewControllers\Features\BuilderFeaturesTableView\FeaturesTableViewCell.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\LoginViewController.cs" />
+    <Compile Include="ViewControllers\LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CustomTabBarViewController.cs" />
+    <Compile Include="ViewControllers\CustomTabBarViewController.designer.cs">
+      <DependentUpon>CustomTabBarViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\EventsViewController.cs" />
+    <Compile Include="ViewControllers\Events\EventsViewController.designer.cs">
+      <DependentUpon>EventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\BuilderEventsTableView\EventsTableViewCell.cs" />
+    <Compile Include="ViewControllers\Events\BuilderEventsTableView\EventsTableViewCell.designer.cs">
+      <DependentUpon>EventsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\BuilderEventsTableView\EventsTableDataSource.cs" />
+    <Compile Include="ViewControllers\Documents\DocumentsViewController.cs" />
+    <Compile Include="ViewControllers\Documents\DocumentsViewController.designer.cs">
+      <DependentUpon>DocumentsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Documents\BuilderDocumentsTableView\DocumentTableViewCell.cs" />
+    <Compile Include="ViewControllers\Documents\BuilderDocumentsTableView\DocumentTableViewCell.designer.cs">
+      <DependentUpon>DocumentTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Documents\BuilderDocumentsTableView\DocumentTableDataSource.cs" />
+    <Compile Include="ViewControllers\ProfileViewController.cs" />
+    <Compile Include="ViewControllers\ProfileViewController.designer.cs">
+      <DependentUpon>ProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\EventDetailViewController.cs" />
+    <Compile Include="ViewControllers\Events\EventDetailViewController.designer.cs">
+      <DependentUpon>EventDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\FilterEventsViewController.cs" />
+    <Compile Include="ViewControllers\Events\FilterEventsViewController.designer.cs">
+      <DependentUpon>FilterEventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\AddEventViewController.cs" />
+    <Compile Include="ViewControllers\Events\AddEventViewController.designer.cs">
+      <DependentUpon>AddEventViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShortDial\ShortDialViewController.cs" />
+    <Compile Include="ViewControllers\ShortDial\ShortDialViewController.designer.cs">
+      <DependentUpon>ShortDialViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShortDial\BuilderShortDialTableView\SectionTableViewCell.cs" />
+    <Compile Include="ViewControllers\ShortDial\BuilderShortDialTableView\SectionTableViewCell.designer.cs">
+      <DependentUpon>SectionTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShortDial\BuilderShortDialTableView\SectionsTableDataSource.cs" />
+    <Compile Include="ViewControllers\ShortDial\BuilderShortDialTableView\HeaderLevelCell.cs" />
+    <Compile Include="ViewControllers\ShortDial\BuilderShortDialTableView\HeaderLevelCell.designer.cs">
+      <DependentUpon>HeaderLevelCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShortDial\PeopleInChargeViewController.cs" />
+    <Compile Include="ViewControllers\ShortDial\PeopleInChargeViewController.designer.cs">
+      <DependentUpon>PeopleInChargeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShortDial\BuilderPeopleInCharge\PersonInChargeTableViewCell.cs" />
+    <Compile Include="ViewControllers\ShortDial\BuilderPeopleInCharge\PersonInChargeTableViewCell.designer.cs">
+      <DependentUpon>PersonInChargeTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShortDial\BuilderPeopleInCharge\PersonInChargeSourceTableView.cs" />
+    <Compile Include="ViewControllers\ShortDial\BuilderPeopleInCharge\HeaderPersonChargeCell.cs" />
+    <Compile Include="ViewControllers\ShortDial\BuilderPeopleInCharge\HeaderPersonChargeCell.designer.cs">
+      <DependentUpon>HeaderPersonChargeCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Views\PaddingTextField.cs" />
+    <Compile Include="PaddingTextField.cs" />
+    <Compile Include="PaddingTextField.designer.cs">
+      <DependentUpon>PaddingTextField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\CustomEventsViews\ObservationEventView.cs" />
+    <Compile Include="ViewControllers\Events\CustomEventsViews\ObservationEventView.designer.cs">
+      <DependentUpon>ObservationEventView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\BuilderPickerForTextField\PickerTextFieldDataSource.cs" />
+    <Compile Include="SectionTextField.cs" />
+    <Compile Include="SectionTextField.designer.cs">
+      <DependentUpon>SectionTextField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\AysaConstants.cs" />
+    <Compile Include="ViewControllers\ShortDial\SectionSearch\SectionSearchResultController.cs" />
+    <Compile Include="ViewControllers\ShortDial\SectionSearch\SectionSearchResultController.designer.cs">
+      <DependentUpon>SectionSearchResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\EventSearch\EventSearchResultController.cs" />
+    <Compile Include="ViewControllers\Events\EventSearch\EventSearchResultController.designer.cs">
+      <DependentUpon>EventSearchResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Events\CustomEventsViews\AttachmentFileView.cs" />
+    <Compile Include="ViewControllers\Events\CustomEventsViews\AttachmentFileView.designer.cs">
+      <DependentUpon>AttachmentFileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Documents\DocumentSearch\DocumentSearchResultViewController.cs" />
+    <Compile Include="ViewControllers\Documents\DocumentSearch\DocumentSearchResultViewController.designer.cs">
+      <DependentUpon>DocumentSearchResultViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DocumentArchive.cs" />
+    <Compile Include="ViewControllers\Preview\PreviewControllerDataSource.cs" />
+    <Compile Include="ViewControllers\Preview\QlItemPreview.cs" />
+    <Compile Include="ViewControllers\Features\FeaturesViewController.cs" />
+    <Compile Include="ViewControllers\Features\FeaturesViewController.designer.cs">
+      <DependentUpon>FeaturesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Features\FilterFeaturesViewController.cs" />
+    <Compile Include="ViewControllers\Features\FilterFeaturesViewController.designer.cs">
+      <DependentUpon>FilterFeaturesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Features\FeatureDetailViewController.cs" />
+    <Compile Include="ViewControllers\Features\FeatureDetailViewController.designer.cs">
+      <DependentUpon>FeatureDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Features\AddFeatureViewController.cs" />
+    <Compile Include="ViewControllers\Features\AddFeatureViewController.designer.cs">
+      <DependentUpon>AddFeatureViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Features\BuilderFeaturesTableView\FeaturesTableDataSource.cs" />
+    <Compile Include="ViewControllers\Features\BuilderFeaturesTableView\FeaturesTableViewCell.cs" />
+    <Compile Include="ViewControllers\Features\BuilderFeaturesTableView\FeaturesTableViewCell.designer.cs">
+      <DependentUpon>FeaturesTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\Features\BuilderPickerForTextField\PickerTextFieldDataSource.cs" />
+    <Compile Include="ViewControllers\Features\FeatureSearch\FeatureSearchResultController.cs" />
+    <Compile Include="ViewControllers\Features\FeatureSearch\FeatureSearchResultController.designer.cs">
+      <DependentUpon>FeatureSearchResultController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aysa.PPEMobile.Model\Aysa.PPEMobile.Model.csproj">
+      <Project>{3D09A2FF-E23F-40EE-9DD8-083E7FEA079D}</Project>
+      <Name>Aysa.PPEMobile.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aysa.PPEMobile.Service\Aysa.PPEMobile.Service.csproj">
+      <Project>{64D6D520-80C5-492F-92F2-BAF844AB11D0}</Project>
+      <Name>Aysa.PPEMobile.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fonts\Roboto\Roboto-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>Roboto-Black.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\Roboto-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>Roboto-Bold.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\Roboto-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>Roboto-Light.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\Roboto-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>Roboto-Medium.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\Roboto-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>Roboto-Regular.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\RobotoCondensed-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>RobotoCondensed-Bold.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\RobotoCondensed-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>RobotoCondensed-Light.ttf</LogicalName>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Roboto\RobotoCondensed-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>RobotoCondensed-Regular.ttf</LogicalName>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BTProgressHUD">
+      <Version>1.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>5.0.0.2012</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.IQKeyboardManager">
+      <Version>1.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>4.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,162 @@
+﻿
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:text="Evento #"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                style="@style/sections_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Usuario" />
+            <EditText
+                android:id="@+id/nro_event_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/background_floating_material_light"
+                android:inputType="text|textCapSentences|textAutoCorrect|textFilter"
+                android:autoText="true"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="6dp" />
+            <TextView
+                style="@style/sections_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Detalle" />
+            <EditText
+                android:id="@+id/title_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/background_floating_material_light"
+                android:inputType="text|textCapSentences|textAutoCorrect|textFilter"
+                android:autoText="true"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="6dp" />
+            <TextView
+                    style="@style/sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/event_sector"/>
+            <Spinner
+                android:id="@+id/spinnerSectors"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:paddingLeft="5dp"
+                android:background="@android:color/white"
+                android:prompt="@string/event_sector_prompt" />
+            <TextView
+                style="@style/sections_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fecha ocurrencia" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/normaltext_evdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desde" />
+                    <EditText
+                        android:id="@+id/from_date_text_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:background="@color/background_floating_material_light"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:drawableLeft="@drawable/ic_calendar_filter"
+                        android:drawablePadding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/normaltext_evdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hasta" />
+                    <EditText
+                        android:id="@+id/to_date_text_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:background="@color/background_floating_material_light"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:drawableLeft="@drawable/ic_calendar_filter"
+                        android:drawablePadding="6dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_aplicar"
+                    android:layout_width="200dp"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btn_login"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Aplicar"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_default_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
