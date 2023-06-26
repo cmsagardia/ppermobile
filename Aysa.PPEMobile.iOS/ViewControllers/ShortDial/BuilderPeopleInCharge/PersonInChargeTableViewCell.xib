@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="cxk-wN-pdQ" customClass="PersonInChargeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukZ-Fe-5p4">
+                        <rect key="frame" x="20" y="0.0" width="280" height="59.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vym-7q-mE4">
+                                <rect key="frame" x="54" y="10.5" width="77.5" height="39.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="48251802" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-Fv-zPq" fixedFrame="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaF-iO-7X9" fixedFrame="YES">
+                                        <rect key="frame" x="0.0" y="21.5" width="77.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellphone" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-R5-cnF">
+                                <rect key="frame" x="25" y="13.5" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="DRd-DT-oOw"/>
+                                    <constraint firstAttribute="height" constant="16" id="h8k-4r-hXs"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQJ-Jw-LVe" userLabel="SeparatorView">
+                                <rect key="frame" x="25" y="57.5" width="245" height="1"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="PC1-YH-9VO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n8Y-R5-cnF" firstAttribute="leading" secondItem="RQJ-Jw-LVe" secondAttribute="leading" id="ORS-LO-2Zh"/>
+                            <constraint firstAttribute="trailing" secondItem="RQJ-Jw-LVe" secondAttribute="trailing" constant="10" id="RRc-bZ-1Rd"/>
+                            <constraint firstItem="vym-7q-mE4" firstAttribute="centerY" secondItem="ukZ-Fe-5p4" secondAttribute="centerY" id="SpD-ON-HfT"/>
+                            <constraint firstAttribute="bottom" secondItem="RQJ-Jw-LVe" secondAttribute="bottom" constant="1" id="bkk-uF-bJF"/>
+                            <constraint firstItem="vym-7q-mE4" firstAttribute="leading" secondItem="n8Y-R5-cnF" secondAttribute="trailing" constant="13" id="gI1-pQ-1VD"/>
+                            <constraint firstItem="RQJ-Jw-LVe" firstAttribute="leading" secondItem="ukZ-Fe-5p4" secondAttribute="leading" constant="25" id="jYM-ME-mmg"/>
+                            <constraint firstItem="n8Y-R5-cnF" firstAttribute="top" secondItem="vym-7q-mE4" secondAttribute="top" constant="3" id="mbT-m2-vDu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ukZ-Fe-5p4" secondAttribute="trailing" constant="20" id="93h-Bm-nKP"/>
+                    <constraint firstAttribute="bottom" secondItem="ukZ-Fe-5p4" secondAttribute="bottom" id="UMv-XA-CcV"/>
+                    <constraint firstItem="ukZ-Fe-5p4" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="gTv-6F-srJ"/>
+                    <constraint firstItem="ukZ-Fe-5p4" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="20" id="lqt-r3-ryt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="containerView" destination="ukZ-Fe-5p4" id="name-outlet-ukZ-Fe-5p4"/>
+                <outlet property="NumberPhoneLabel" destination="nHg-Fv-zPq" id="name-outlet-nHg-Fv-zPq"/>
+                <outlet property="PhoneTypeLabel" destination="uaF-iO-7X9" id="name-outlet-uaF-iO-7X9"/>
+                <outlet property="SeparatorView" destination="RQJ-Jw-LVe" id="name-outlet-RQJ-Jw-LVe"/>
+                <outlet property="IconImage" destination="n8Y-R5-cnF" id="name-outlet-n8Y-R5-cnF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cellphone" width="30" height="30"/>
+        <image name="filter_icon" width="22" height="22"/>
+        <image name="launch_backgound" width="2000" height="3556"/>
+        <image name="short_dial_icon" width="26" height="26"/>
+        <image name="event_icon" width="26" height="26"/>
+        <image name="document_icon" width="26" height="26"/>
+        <image name="profile_icon" width="26" height="26"/>
+        <image name="user_credentials" width="20" height="20"/>
+        <image name="lock_credentials" width="20" height="20"/>
+        <image name="marker_event" width="20" height="20"/>
+        <image name="user_event" width="20" height="20"/>
+        <image name="calendar_event" width="20" height="20"/>
+        <image name="open_folder_event" width="20" height="20"/>
+        <image name="close_folder_event" width="20" height="20"/>
+        <image name="search_icon" width="30" height="30"/>
+        <image name="calendar_filter_event" width="30" height="30"/>
+        <image name="pdf_file" width="50" height="50"/>
+        <image name="edit_profile_title" width="30" height="30"/>
+        <image name="message_edit_profile" width="30" height="30"/>
+        <image name="plus_edit" width="22" height="22"/>
+        <image name="alternative_phone" width="30" height="30"/>
+        <image name="rpv_phone" width="30" height="30"/>
+        <image name="office_phone" width="30" height="30"/>
+        <image name="globe" width="30" height="30"/>
+        <image name="lock" width="30" height="30"/>
+        <image name="clear_filter" width="22" height="22"/>
+    </resources>
+</document>

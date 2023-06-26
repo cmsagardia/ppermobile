@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="MyTheme" parent="MyTheme.Base">
+  </style>
+
+  <!-- Base theme applied no matter what API -->
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+
+    <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+    <item name="windowNoTitle">true</item>
+    <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+
+
+    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+
+    <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <item name="android:textSize">16sp</item>
+
+    <!-- Datetime Picker -->
+    <item name="colorControlActivated">@color/colorPrimary</item>
+    <item name="android:selectableItemBackgroundBorderless">@color/colorPrimary</item>
+    <item name="colorControlHighlight">#d50000</item>
+
+  </style>
+
+
+  <!-- Custom Tab -->
+  <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabTextAppearance">@style/MyCustomTabText</item>
+    <item name="tabSelectedTextColor">@android:color/white</item>
+  </style>
+
+  <style name="MyCustomTabText" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:maxLines">1</item>
+  </style>
+
+
+  <!-- Login -->
+  <style name="LoginInput" parent="@android:style/Widget.EditText">
+    <item name="android:paddingBottom">16dp</item>
+    <item name="android:drawablePadding">8dp</item>
+    <item name="android:layout_marginTop">8dp</item>
+    <item name="android:layout_marginBottom">8dp</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:backgroundTint">@android:color/white</item>
+    <item name="android:textColorHint">@android:color/white</item>
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+
+  <style name="sections_title" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">17sp</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+  </style>
+
+  <style name="checkbox" parent="MyTheme.Base">
+    <item name="colorControlActivated">@color/colorPrimary</item>
+    <item name="colorControlHighlight">@android:color/white</item>
+    <item name="android:backgroundTint">@android:color/transparent</item>
+    <item name="android:textColorHint">@android:color/white</item>
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+
+    <style name="sections_title_search" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+  </style>
+
+  <style name="normaltext_evsearch" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/colorCardText</item>
+  </style>
+
+  <style name="statustext_evsearch" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+
+  <style name="normaltext_evdetail" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/colorCardText</item>
+  </style>
+
+  <style name="form_label" parent="TextAppearance.AppCompat">
+  <item name="android:textSize">14sp</item>
+  <item name="android:textColor">@android:color/black</item>
+  </style>
+
+
+
+  <!--<style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+          <item name="colorPrimary">@color/colorPrimary</item>
+          <item name="colorPrimaryDark">@android:color/black</item>
+          <item name="colorAccent">@android:color/white</item>
+  </style>-->
+</resources>

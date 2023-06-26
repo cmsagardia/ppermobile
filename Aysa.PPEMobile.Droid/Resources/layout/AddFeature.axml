@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/form_bg_grey"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:text="@string/app_bartitle"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/form_bg_grey"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+                                
+                <FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@drawable/rounded_corners_background"
+					android:paddingTop="10dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginHorizontal="20dp"
+					android:id="@+id/frameLayout1"
+                    >
+					<TextView
+						android:textColor="@color/colorPrimary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="12dp"
+						android:textStyle="normal|bold"
+						android:textAllCaps="true"
+						android:text="@string/notes_Title_GTOP_"
+						android:layout_gravity="center_horizontal"
+						android:id="@+id/textView1" 
+                    />
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="2dp"
+						android:layout_marginTop="20dp"
+						android:background="@color/colorPrimary"
+						android:id="@+id/view1" 
+                    />
+
+					<LinearLayout
+						android:id="@+id/text_container"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:clickable="false"
+						android:focusable="false"
+						android:orientation="vertical"
+						android:layout_marginTop="20.0dp"
+						android:layout_marginBottom="12dp"
+						android:padding="10dp"
+						android:layout_gravity="center">
+						<TextView
+							android:id="@+id/description_note_1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textSize="11dp"
+                            android:text=""
+							android:textColor="@color/darkerGrayLine"/>
+                        <TextView
+							android:id="@+id/list_note"
+                            android:layout_marginLeft="15dp"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textSize="11dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="-15dp"
+                            android:text=""
+							android:textColor="@color/darkerGrayLine"/>
+                        <TextView
+							android:id="@+id/description_note_2"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textSize="11dp"
+                            android:text=""
+							android:textColor="@color/darkerGrayLine"/>
+					</LinearLayout>
+				</FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/information" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorPrimary" />
+                <TextView
+                    style="@style/normaltext_evdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/event_detail"
+                    android:textStyle="bold" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="1000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <Aysa.PPEMobile.Droid.Utilities.MultilineEditText
+                        android:id="@+id/editTextEventDetail"
+                        android:inputType="text|textMultiLine|textCapSentences|textAutoCorrect|textFilter"
+                        android:digits="0123456789@#$-+()/*.,:;!?~|÷×£€°={}%[]¿¡№_qwertzuiopasdfghjklñyxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNM+-=%üéáíóúÁÉÍÓÚÜ' "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:height="80dp"
+                        android:background="@color/background_floating_material_light"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:padding="3dp"
+                        android:maxLength="1000"
+                        android:singleLine="false"
+                        android:autoText="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    style="@style/normaltext_evdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/author"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editTextAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp"
+                    android:editable= "false"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/background_floating_material_light"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:maxLines="1" />
+                <TextView
+                    style="@style/normaltext_evdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/event_sector"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/spinnerSectors"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:prompt="@string/event_sector_prompt" />
+                <TextView
+                    style="@style/normaltext_evdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/files"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/addEventFilesContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+                <Button
+                    android:id="@+id/btnUploadFiles"
+                    android:background="@drawable/btn_purple"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/upload_files"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+                <TextView
+                    style="@style/normaltext_evdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/event_date"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editTextEventDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/background_floating_material_light"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:inputType="datetime"
+                    android:maxLines="1" />
+                <Button
+                    android:id="@+id/btnEventNewsCreate"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_login"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/addFeature_btn_create"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_default_size" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include
+        layout="@layout/progressoverlay" />
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/form_bg_grey">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/editTextSearchEvent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="38dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/rounded_edittext"
+                        android:drawableLeft="@drawable/ic_search"
+                        
+                        android:drawablePadding="6dp"
+                        android:hint="@string/search_field"
+                        android:imeOptions="actionDone"
+                        android:autoText="true"
+                        android:inputType="text|textCapSentences|textAutoCorrect|textFilter"
+                        android:paddingLeft="10dp"
+                        />
+                    <Button
+                        android:id="@+id/cleanEventTextFilter"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/rounded_corners_background"
+                        android:drawableLeft="@drawable/close"
+                        />
+            |   </FrameLayout>
+                
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/EventsRecyclerView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="20dp"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_add"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            android:visibility="gone" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include
+        layout="@layout/progressoverlay" />
+</FrameLayout>
